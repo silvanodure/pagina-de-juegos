@@ -1,0 +1,327 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black;
+    color:azure;
+}
+
+.foto img{
+    width: 100%;
+    border-radius: 60%;
+    display: block;
+    max-width: 500px;
+}
+.contenedor{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background-color:black;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+@media (max-width: 768px){
+    .contenedor{
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap:48px;
+        padding:0;
+
+ }
+}
+.perfil{
+    grid-column: 1/-1;
+    margin-bottom: 32px;
+}
+.cajadelperfil{
+    display: flex;
+    gap: 32px;
+}
+
+
+h1{
+    font-family:sans-serif;
+    text-transform: uppercase;
+    font-size: 48px;
+    color:gold;
+}
+.mititulo{
+    font-family:'Times New Roman';
+    color:lightyellow;
+    font-size: 36px;
+    margin-top: 10px;
+
+}
+.autobombo{
+    color:  snow;
+    margin-top: 10px;
+    display: block;
+    font-size: 24px;
+    font-family:'Lucida Sans'; 
+}
+.listaDeDatos{
+    margin-top: 32px;
+    margin-left: 32px;
+    line-height: 2;
+}
+h2{
+    font-family:sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    color:gold;
+    padding-top: 48px;
+}
+h2:hover{
+    color:white;
+    transition: .3s;
+    transform: scale(1.1);
+
+}
+
+.listaEducacion{
+    margin-top: 32px;
+    margin-left: 32px;
+    line-height: 2;
+}
+.titulosestudios{
+font-style: inherit;
+border-bottom: white solid;
+font-size: 25px;
+}
+.contacto{
+    margin-top: 48px;
+    line-height: 2;
+}
+
+
+#telefono{
+
+    background-color: rgb(192, 190, 88);
+    padding: 10px 18px;
+    margin: 10px; 
+    cursor: pointer;
+}
+#direccion{
+    background-color: rgb(192, 190, 88);
+    padding: 10px 18px;
+    margin: 10px; 
+    cursor: pointer;
+}
+
+#email{
+    background-color: rgb(192, 190, 88);
+    padding: 10px 18px;
+    margin: 10px; 
+    cursor: pointer;
+}
+
+
+.ocupacion{
+    margin-top: 32px;
+    margin-left: 32px;
+    font-size: 18px;
+color: aliceblue;
+text-transform: uppercase;
+text-decoration: underline;
+}
+.ocupacion:hover{
+    color:yellow;
+    transition: .3s;
+}
+
+.descripcionDelTrabajo{
+    line-height: 2;
+    
+}
+
+
+
+
+.redes_sociales{
+    color: cornsilk;
+    margin-top: 48px;
+    margin-left: 32px;
+    line-height: 2;
+    font-size: 48px;
+}
+.fa-brands{
+    color:azure;
+}
+.fa-brands:hover{
+    color: yellow;
+    transform: scale(1.1);
+    transition: .3s;
+}
+.logo{
+    max-width: 80px;
+    max-height: 40px;
+}
+.enlacesMenu{
+    display: flex;
+    font-family:sans-serif;
+    font-size: 16px;
+    padding: 0;
+}
+.enlacesMenu li{
+    padding: 0 48px;
+    list-style-type: none;
+}
+.enlacesMenu li:hover{
+    background-color: rgb(245, 155, 52);
+    transform: scale(1.1);
+    transition: .3s;
+}
+.enlacesMenu li a{
+    text-decoration: none;
+    color: snow;
+    width: 700;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color:#f2cc8f ;
+}
+.menu{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    display: none;
+}
+
+
+   
+ @media(max-width: 768px){
+
+    .menu{
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+    .logo{
+        padding-left: 30px;
+    }
+    .nav{
+        flex-direction:column;
+        align-items:flex-start;
+        padding: 25px 0;
+        overflow: hidden;
+    }
+    .enlacesMenu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 92vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+    }
+    .enlacesMenu li{
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+    }
+ }
+
+ .enlacesMenu.activado{
+    display: flex;
+ }
+ 
+ 
+ .fa-laptop-code{
+    font-size: 48px;
+    padding-top: 15px;
+    padding-bottom:30px;
+ }
+ .fa-earth-americas{
+    font-size: 48px;
+    padding-bottom: 30px;
+ }
+ .fa-gamepad{
+    font-size: 48px;
+ }
+ .fa-gamepad:hover{
+    color:gold;
+    transition: .3s;
+ }
+ .fa-earth-americas:hover{
+    color:gold;
+    transition: .3s;
+ }
+ .fa-laptop-code:hover{
+    color:gold;
+    transition: .3s;
+ }
+#nombre{
+    background-color: rgb(255, 244, 147);
+    line-height: 2;
+    
+}
+#apellido{
+    background-color: rgb(255, 244, 147);
+    line-height: 2;
+}
+#correo{
+    background-color: rgb(255, 244, 147);
+    line-height: 2;
+}
+#numeroDeTelefono{
+    background-color: rgb(255, 244, 147);
+    line-height: 2;
+}
+#mensaje{
+    background-color: #fff493;
+    line-height: 2;
+}
+h3{
+    font-family:sans-serif;
+    text-transform: uppercase;
+    font-size: 32px;
+    color:gold;
+    padding-top: 38px;
+}
+h3:hover{
+    color: white;
+    transition: .3s;
+}
+
+#botonFormulario{
+    color:black;
+    cursor: pointer;
+    text-decoration: solid;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border-color: yellow;
+    font-size:28px;
+    border-radius: 15px;
+}
+
+#botonFormulario:hover{
+    background-color:rgb(248, 245, 221);
+    transform: scale(1.1);
+    color: black;
+    transition: .4s;
+}
+
+.formulario{
+display: none;
+}
+ #formulario.activado{
+display:flex;
+ }
+ 
+ .fa-solid:hover{
+    transform: scale(1.1);
+    transition: .3s;
+ }
